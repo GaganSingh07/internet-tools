@@ -1,0 +1,156 @@
+$primary: blue;
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(rgba(98, 100, 102, 0.5), rgba(98, 100, 102, 0.5)),
+    url("/assets/bg-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.menu-item {
+  margin: 0px 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+navbar {
+  color: aliceblue;
+}
+
+.usr-img {
+  margin: 0px 20px;
+  height: 35em;
+  width: 45em;
+}
+
+.next-button {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+}
+
+.search-container {
+  margin: 10px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; /* Ensure it is right-aligned */
+}
+
+.search-input {
+  padding: 5px;
+  font-size: 16px;
+  width: 40vh;
+  border-radius: 10px;
+  height: 50px;
+}
+
+.search-button {
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+  width: 5em;
+  border-radius: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.main1-container {
+  padding: 20px;
+  background-color: white;
+  margin: 2em; /* Push it below the viewport */
+  width: 90%;
+  height: 55vh;
+  text-align: center;
+  margin-top: 0;
+}
+
+.main1-container > p {
+  background-color: #b4bcc0;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 80%;
+  text-align: left;
+  padding: 10px;
+  overflow-y: auto;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black; /* You can adjust this color */
+  text-align: center;
+  padding: 10px 0; /* Adjust this value according to your needs */
+  display: flex;
+  justify-content: center;
+}
+
+.footer > p {
+  color: aliceblue;
+  background-color: black;
+}
+
+.like-button {
+  border-radius: 10px;
+  height: 30px;
+  width: 40px;
+  padding: 2px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  color: black;
+  font-weight: bold;
+}
+
+.f {
+  margin-bottom: 4px;
+  display: flex;
+  width: 180%;
+  justify-content: flex-end;
+}
+
+.cookstown-container {
+  text-align: center;
+}
+
+.cookstown-title {
+  font-size: 3.5em;
+  color: #fff;
+  animation: cookstown-fadeIn 2s ease-in-out, cookstown-bounce 2s infinite;
+  letter-spacing: 0.1rem;
+}
+.body-text {
+  font-size: 1.5em;
+  color: #fff;
+  animation: cookstown-fadeIn 2s ease-in-out, cookstown-bounce 2s infinite;
+}
+
+@keyframes cookstown-fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cookstown-bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}

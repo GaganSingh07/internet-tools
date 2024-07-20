@@ -1,0 +1,17 @@
+.about-container {
+  text-align: center;
+  margin: 0px 3em;
+}
+
+.book-img {
+  margin: 0px 20px;
+  height: auto;
+  width: 100%;
+  max-width: 25em;
+}
+
+@media (max-width: 767.98px) {
+  .about-container {
+    margin: 20px 0;
+  }
+}
